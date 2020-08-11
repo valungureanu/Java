@@ -1,0 +1,7 @@
+1. Primul fisier
+
+2. Al 2-lea commit si al 2-lea Push
+
+3. Al 3-lea commit si Push pe ramura edu
+
+4. Al 4-lea commit total si al 2-lea pe ramura edu
