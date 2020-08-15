@@ -1,7 +1,7 @@
-public class Lesson6 {
+public class DataTypes {
     public static void main(String[] parms) {
-        Lesson6 primaLectie = new Lesson6();
-        Test1 primaClasa = new Test1();
+        DataTypes obiectTipuri = new DataTypes();
+        DataTypes obiectTipuri1 = new DataTypes();
 
         byte b = 60;
         short s = 50;
@@ -17,9 +17,9 @@ public class Lesson6 {
         int b1 = 20;
         int sum = a1 + b1;
 
-        String concatString ="String1"+"String2";
+        String concatString = "String1" + "String2";
 
-        System.out.println(d+ "  " + f);
+        System.out.println(d + "  " + f);
 
 
     }
