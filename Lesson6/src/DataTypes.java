@@ -9,7 +9,7 @@ public class DataTypes {
         long l = 1000000L;
         float f = 12.5F;
         double d = 13;
-        char c = 'A";
+        char c = 'A';
         String s1 = "";
         boolean bool = true;
 
