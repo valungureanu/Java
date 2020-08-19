@@ -48,6 +48,20 @@ public class DataTypes {
     3
  */
 
+        int sum1 = 10;
+        int operator = 20;
+
+        sum1 += operator;
+        sum++;
+
+
+        if (4>1){
+
+            System.out.println("\n Mai nare");
+
+        }
+
+
         String concatString = "String1" + "String2";
 
         System.out.println(d + "  " + f);
