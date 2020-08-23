@@ -1,5 +1,7 @@
 public class l9_temaPeAcasa {
 
+    static long n;
+
     static void hello10() {
         for (int i = 1; i <= 10; i++) System.out.println("Hello " + i + " !!!");
     }
@@ -16,7 +18,7 @@ public class l9_temaPeAcasa {
 
     static void numerePare(long n) {
         if (n > 1) {
-            System.out.println("Numere pare nu mai mari decat "+n+"!!!");
+            System.out.println("Numerele pare care nu sunt mai mari decat "+n+"!!!");
             for (int i = 2; i <= n; i += 2) {
                 System.out.println(i);
             }
@@ -27,7 +29,7 @@ public class l9_temaPeAcasa {
 
     static void numereImpare(long n) {
         if (n > 0) {
-            System.out.println("Numere impare nu mai mari decat "+n+"!!!");
+            System.out.println("Numerele impare care nu sunt mai mari decat "+n+"!!!");
             for (int i = 1; i <= n; i += 2) {
                 System.out.println(i);
             }
@@ -40,6 +42,8 @@ public class l9_temaPeAcasa {
     public static void main(String[] params) {
 
         System.out.println();
+
+        hello10();
 
         Student student1 = new Student();
 
@@ -86,16 +90,14 @@ public class l9_temaPeAcasa {
 
         System.out.println();
 
-        long n = 10000;
+        n = 10000;
         suma(n);
 
-        n = 51;
+        n = 11;
         numerePare(n);
 
-        n = 51;
+        n = 7;
         numereImpare(n);
-
-        hello10();
 
     }
 
