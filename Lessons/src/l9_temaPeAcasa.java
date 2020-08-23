@@ -1,5 +1,42 @@
 public class l9_temaPeAcasa {
 
+    static void hello10() {
+        for (int i = 1; i <= 10; i++) System.out.println("Hello " + i + " !!!");
+    }
+
+    static void suma(long n) {
+        long sum = 0l;
+        for (int i = 0; i <= n; ++i) {
+            sum += i;
+        }
+        System.out.println("Suma numerelor de la 1 la " + n + " este egala cu: " + sum);
+        return;
+    }
+
+
+    static void numerePare(long n) {
+        if (n > 1) {
+            System.out.println("Numere pare nu mai mari decat "+n+"!!!");
+            for (int i = 2; i <= n; i += 2) {
+                System.out.println(i);
+            }
+            return;
+        } else System.out.println("Introduce un numar intreg mai mare decat 1!");
+
+    }
+
+    static void numereImpare(long n) {
+        if (n > 0) {
+            System.out.println("Numere impare nu mai mari decat "+n+"!!!");
+            for (int i = 1; i <= n; i += 2) {
+                System.out.println(i);
+            }
+            return;
+        } else System.out.println("Introduce un numar intreg mai mare decat 0!");
+
+    }
+
+
     public static void main(String[] params) {
 
         System.out.println();
@@ -50,15 +87,15 @@ public class l9_temaPeAcasa {
         System.out.println();
 
         long n = 10000;
-        System.out.println(student3.suma(n));
+        suma(n);
 
         n = 51;
-        student1.numerePare(n);
+        numerePare(n);
 
         n = 51;
-        student1.numereImpare(n);
+        numereImpare(n);
 
-        student2.hello10();
+        hello10();
 
     }
 
