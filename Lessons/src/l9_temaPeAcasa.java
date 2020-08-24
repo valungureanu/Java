@@ -97,7 +97,7 @@ public class l9_temaPeAcasa {
         n = 10000;
         suma(n);
 
-        n = 12;
+        n = 11;
         numerePare(n);
 
         n = 7;
