@@ -18,9 +18,11 @@ public class l9_temaPeAcasa {
 
     static void numerePare(long n) {
         if (n > 1) {
-            System.out.println("Numerele pare care nu sunt mai mari decat "+n+"!!!");
-            for (int i = 2; i <= n; i += 2) {
+            System.out.println("Numerele pare care nu sunt mai mari decat " + n + "!!!");
+            int i = 0;
+            while (i <= n) {
                 System.out.println(i);
+                i += 2;
             }
             return;
         } else System.out.println("Introduce un numar intreg mai mare decat 1!");
@@ -29,10 +31,12 @@ public class l9_temaPeAcasa {
 
     static void numereImpare(long n) {
         if (n > 0) {
-            System.out.println("Numerele impare care nu sunt mai mari decat "+n+"!!!");
-            for (int i = 1; i <= n; i += 2) {
+            System.out.println("Numerele impare care nu sunt mai mari decat " + n + "!!!");
+            int i = 1;
+            do {
                 System.out.println(i);
-            }
+                i += 2;
+            } while (i <= n);
             return;
         } else System.out.println("Introduce un numar intreg mai mare decat 0!");
 
@@ -93,7 +97,7 @@ public class l9_temaPeAcasa {
         n = 10000;
         suma(n);
 
-        n = 11;
+        n = 12;
         numerePare(n);
 
         n = 7;
