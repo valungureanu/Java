@@ -5,10 +5,17 @@ import md.tekwill.pachet3.Clasa6;
 
 public class Clasa5 {
     public static void main(String[] args) {
-        Clasa4 obj4 = new Clasa4();
-        obj4.met14();
 
-        Clasa6 obj6 = new Clasa6();
-        System.out.println("Ura!!! Bonus!!! "+obj6.x*obj6.y);
+        Clasa6 obj1 = new Clasa6();
+
+        System.out.println(obj1.citireProp16());
+        System.out.println(obj1.citireProp26());
+
+        obj1.setareProp16(200);
+        obj1.setareProp26(300);
+
+        System.out.println(obj1.citireProp16());
+        System.out.println(obj1.citireProp26());
+
     }
 }
