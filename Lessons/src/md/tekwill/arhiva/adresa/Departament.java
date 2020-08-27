@@ -1,4 +1,4 @@
-package md.tekwill.adresa;
+package md.tekwill.arhiva.adresa;
 
 public class Departament {
     private String name;

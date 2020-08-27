@@ -1,4 +1,4 @@
-package md.tekwill.exercitiu1;
+package md.tekwill.arhiva.exercitiu1;
 
 public class ClasaB {
     void metB(){

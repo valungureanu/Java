@@ -1,4 +1,4 @@
-package md.tekwill.exercitiu1;
+package md.tekwill.arhiva.exercitiu1;
 
 public class Test {
     public static void main(String[] args) {

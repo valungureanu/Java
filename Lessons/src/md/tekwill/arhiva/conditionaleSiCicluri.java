@@ -1,3 +1,5 @@
+package md.tekwill.arhiva;
+
 public class conditionaleSiCicluri {
 
     public static void main(String[] args) {

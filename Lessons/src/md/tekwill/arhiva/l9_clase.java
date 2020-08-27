@@ -1,3 +1,5 @@
+package md.tekwill.arhiva;
+
 public class l9_clase {
     public static void main(String[] params) {
         Angajat angajat = new Angajat();

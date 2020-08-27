@@ -1,3 +1,5 @@
+package md.tekwill.arhiva;
+
 public class l8_breakLabel {
     public static void main(String[] params) {
         compare:

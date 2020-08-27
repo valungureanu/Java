@@ -1,3 +1,5 @@
+package md.tekwill.arhiva;
+
 public class Angajat {
      String nume="Ion";
      long virsta=56;

@@ -1,3 +1,5 @@
+package md.tekwill.arhiva;
+
 public class test {
     int numarDeUsi = 3;
     double capacitateMotor = 1.4;

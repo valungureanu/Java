@@ -1,3 +1,5 @@
+package md.tekwill.arhiva;
+
 public class Student {
 
     String prenume, nume;
