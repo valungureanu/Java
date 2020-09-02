@@ -1,7 +1,6 @@
-package md.tekwill.pachet2;
+package md.tekwill.arhiva.pachet2;
 
-import md.tekwill.pachet3.Clasa4;
-import md.tekwill.pachet3.Clasa6;
+import md.tekwill.arhiva.pachet3.Clasa6;
 
 public class Clasa5 {
     public static void main(String[] args) {

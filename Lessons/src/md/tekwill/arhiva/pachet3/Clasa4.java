@@ -1,4 +1,4 @@
-package md.tekwill.pachet3;
+package md.tekwill.arhiva.pachet3;
 
 public class Clasa4 {
 

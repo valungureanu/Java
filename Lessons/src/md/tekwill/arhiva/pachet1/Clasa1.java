@@ -1,4 +1,4 @@
-package md.tekwill.pachet1;
+package md.tekwill.arhiva.pachet1;
 
 public class Clasa1 {
     public void met11(){
