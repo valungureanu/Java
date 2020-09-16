@@ -7,16 +7,14 @@ public class PersoanaService {
     PersoanaDao persoanaDao = new PersoanaDao();
 //    AdresaDao adresaDao = new AdresaDao();
 
-    public void create(Persoana persoana) {
-        persoanaDao.create(persoana);
+    public Persoana create(Persoana persoana) {
+        return persoanaDao.create(persoana);
     }
 
-    public Persoana read(int id) {
-        return null;
-    }
+    public Persoana read(int id) { return persoanaDao.read(id); }
 
     public Persoana[] readAll() {
-        return null;
+        return persoanaDao.readAll();
     }
 
     public boolean update(int id) {
