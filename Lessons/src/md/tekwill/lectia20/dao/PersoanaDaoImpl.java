@@ -6,58 +6,55 @@
 package dao;
 
 import model.Persoana;
+
 import java.util.Scanner;
 
 /**
- *
- * @author Vadim
+ * @author Valeriu Ungureanu
  */
 
 public class PersoanaDaoImpl implements dao.PersoanaDao {
 
-    public Persoana[] listPersoane = new Persoana[20];
+    public Persoana[] persoane = new Persoana[20];
 
     @Override
-    public Persoana create(Persoana persoana) {
-        if (Persoana.contorPersoane < listPersoane.length) {
-            listPersoane[Persoana.contorPersoane++] = persoana;
+    public Persoana addPersoana(Persoana persoana) {            // adaugarea unei persoane in array
+        if (Persoana.contorPersoane < persoane.length) {
+            persoane[Persoana.contorPersoane++] = persoana;
             return persoana;
         }
         System.out.println("A fost depasita lungimea admisibila");
         return null;
-        //logica de adaugare a persoanei in array
     }
 
-    public Persoana read(int id) {
+    public Persoana read(int id) {                          // gasirea persoanei cu id de la argument in array
         for (int i = 0; i < Persoana.contorPersoane; i++) {
-            if (id == listPersoane[i].getID()) {
-                return listPersoane[i];
+            if (id == persoane[i].getID()) {
+                return persoane[i];
             }
         }
-        //logica de gasire a persoanei cu id de la argument in array
         return null;
     }
 
-    public Persoana[] readAll() {
+    public Persoana[] readAll() {                       // returnarea tuturor persoanelor din array
         Persoana[] persoaneExistente = new Persoana[Persoana.contorPersoane];
         for (int i = 0; i < Persoana.contorPersoane; i++) {
-            persoaneExistente[i] = listPersoane[i];
+            persoaneExistente[i] = persoane[i];
         }
-        //logica de returnare a tuturor persoanelor din array
         return persoaneExistente;
     }
 
     public void update(int id) {
         for (int i = 0; i < Persoana.contorPersoane; i++) {
-            if (id == listPersoane[i].getID()) {
+            if (id == persoane[i].getID()) {
                 System.out.println("Persoana cu ID = " + id + " a fost gasita");
                 Scanner myObj = new Scanner(System.in);  // Create a Scanner object
                 System.out.println("Introduceti numele nou:");
                 String nume1 = myObj.nextLine();  // introducem numele
                 System.out.println("Introduceti prenumele nou: ");  // Output user input
                 String prenume1 = myObj.nextLine();  // introducem numele
-                listPersoane[id - 1].writeNume(nume1);
-                listPersoane[id - 1].writePrenume(prenume1);
+                persoane[id - 1].writeNume(nume1);
+                persoane[id - 1].writePrenume(prenume1);
                 System.out.println("Datele persoanei au fost improspatate cu succes");
             }
         }
@@ -68,14 +65,12 @@ public class PersoanaDaoImpl implements dao.PersoanaDao {
 
     public void delete(int id) {
         for (int i = 0; i < Persoana.contorPersoane; i++) {
-            if (id == listPersoane[i].getID()) {
-//                for (int i11 = id; i11 < Persoana.contorPersoane; i11++) {
-                System.out.println("Acum stergem persoana cu ID = " + id);
-                listPersoane[id - 1].writeNume(listPersoane[Persoana.contorPersoane - 1].getNume()); // Ultima persoana o punem in locul persoanei sterse
-                listPersoane[id - 1].writePrenume(listPersoane[Persoana.contorPersoane - 1].getPreNume());
+            if (id == persoane[i].getID()) {
+                for (int j = id; j < Persoana.contorPersoane-1; j++) {
+                    System.out.println("Acum stergem persoana cu ID = " + id);
+                    persoane[j] = persoane[j + 1]; // Ultima persoana o punem in locul persoanei sterse
+                }
                 Persoana.contorPersoane--;
-                Persoana.countId--;
-//                }
             }
         }
         // 1. cautare dupa id
@@ -89,7 +84,7 @@ public class PersoanaDaoImpl implements dao.PersoanaDao {
         } else {
             System.out.println("Acum sunt inregistrate persoanele:");
             for (int i = 0; i < Persoana.contorPersoane; i++) {
-                System.out.println("ID: " + listPersoane[i].getID() + "; Nume: " + listPersoane[i].getNume() + "; Prenume: " + listPersoane[i].getPreNume());
+                System.out.println("ID: " + persoane[i].getID() + "; Nume: " + persoane[i].getNume() + "; Prenume: " + persoane[i].getPreNume());
             }
         }
     }

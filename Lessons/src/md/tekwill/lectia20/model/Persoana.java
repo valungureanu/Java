@@ -7,10 +7,10 @@ package model;
 
 /**
  *
- * @author Vadim
+ * @author Valeriu Ungureanu
  */
 public class Persoana {
- private int id;
+    private int id;
     private String nume;
     private String preNume;
     public static int countId;
@@ -43,5 +43,5 @@ public class Persoana {
                 ", nume='" + nume + '\'' +
                 ", preNume='" + preNume + '\'' +
                 '}';
-    }    
+    }
 }

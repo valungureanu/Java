@@ -7,18 +7,16 @@ package service;
 
 
 import dao.PersoanaDao;
-import dao.PersoanaDaoImpl;
 import model.Persoana;
 /**
  *
- * @author Vadim
+ * @author Valeriu Ungureanu
  */
 public class PersoanaServiceImpl {
-        PersoanaDao persoanaDao = new PersoanaDaoImpl();
-//    AdresaDao adresaDao = new AdresaDao();
+    PersoanaDao persoanaDao = (PersoanaDao) new dao.PersoanaDaoImpl();
 
-    public void create(Persoana persoana) {
-        persoanaDao.create(persoana);
+    public void addPersoana(Persoana persoana) {
+        persoanaDao.addPersoana(persoana);
     }
 
     public Persoana read(int id) {

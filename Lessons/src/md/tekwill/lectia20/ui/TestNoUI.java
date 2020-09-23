@@ -13,11 +13,11 @@ public class TestNoUI {
     public static void main(String[] args) {
         PersoanaServiceImpl service = new PersoanaServiceImpl();
         Persoana persoana1 = new Persoana("Ion", "Bostan");
-        service.create(persoana1);
+        service.addPersoana(persoana1);
         Persoana persoana2 = new Persoana("Vasile", "Botnari");
-        service.create(persoana2);
+        service.addPersoana(persoana2);
         Persoana persoana3 = new Persoana("John", "Snow");
-        service.create(persoana3);
+        service.addPersoana(persoana3);
         Persoana persoana4 =  service.read(30);
 //        System.out.println(persoana3);
         service.printeazaToatePersoanele();
@@ -28,7 +28,7 @@ public class TestNoUI {
         service.delete(2);
         service.printeazaToatePersoanele();
         Persoana persoana5 = new Persoana("Vasile", "Botnari");
-        service.create(persoana5);
+        service.addPersoana(persoana5);
         System.out.println("Am creat o noua persoana");
         service.printeazaToatePersoanele();
     }

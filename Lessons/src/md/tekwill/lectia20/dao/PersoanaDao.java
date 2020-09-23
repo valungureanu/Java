@@ -9,10 +9,11 @@ import model.Persoana;
 
 /**
  *
- * @author Vadim
+ * @author Valeriu Ungureanu
  */
 public interface PersoanaDao {
-        public Persoana create(Persoana persoana);
+
+        public Persoana addPersoana(Persoana persoana);
 
         model.Persoana read(int id);
 
