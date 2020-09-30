@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 
 class DemoThrowsException {
     public void readFile(String file) throws FileNotFoundException {
-        if (file = null)
+        if (file == null)
             throw new NullPointerException(); //genereaza o exceptie care nu este declarata dupa throws
         boolean found = findFile(file);
         if (!found)
@@ -16,6 +16,7 @@ class DemoThrowsException {
 
     boolean findFile(String file) {
         // code to return true if file can be located
+        return false;
     }
 
 }
