@@ -19,6 +19,7 @@ public class MultipleExceptions {
             System.out.println("Finally ");
             // code to close fis
         }
-        System.out.println("Next task ");
+        System.out.println("Next task1 ");
+        System.out.println("Next task2 ");
     }
 }
