@@ -13,7 +13,9 @@ import model.Persoana;
  */
 public interface PersoanaDao {
 
-        public Persoana addPersoana(Persoana persoana);
+    Persoana create(Persoana persoana);
+
+    public Persoana addPersoana(Persoana persoana);
 
         model.Persoana read(int id);
 
@@ -21,7 +23,9 @@ public interface PersoanaDao {
 
         void update(int id);
 
-        void delete(int id);
+    void update(int id, String nume, String prenume);
+
+    void delete(int id);
 
         void printeazaToatePersoanele();
 }

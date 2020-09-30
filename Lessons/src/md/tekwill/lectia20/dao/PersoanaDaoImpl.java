@@ -18,6 +18,11 @@ public class PersoanaDaoImpl implements dao.PersoanaDao {
     public Persoana[] persoane = new Persoana[20];
 
     @Override
+    public Persoana create(Persoana persoana) {
+        return null;
+    }
+
+    @Override
     public Persoana addPersoana(Persoana persoana) {            // adaugarea unei persoane in array
         if (Persoana.contorPersoane < persoane.length) {
             persoane[Persoana.contorPersoane++] = persoana;
@@ -61,6 +66,11 @@ public class PersoanaDaoImpl implements dao.PersoanaDao {
         // 1. cautare dupa id
         // 2. persoanei gasite i se updateaza datele
         // 3. persoana cu noile date se salveaza inapoi in array
+    }
+
+    @Override
+    public void update(int id, String nume, String prenume) {
+
     }
 
     public void delete(int id) {

@@ -1,3 +1,8 @@
 *.class
 *.exe
 *.com
+/Lessons/src/md/tekwill/HelloWorld/nbproject/private/
+/Lessons/src/md/tekwill/HelloWorld/build/
+/Lessons/src/md/tekwill/ValeriusProject/nbproject/private/
+/Lessons/src/md/tekwill/ValeriusProject/build/
+/Lessons/src/md/tekwill/ValeriusProject/dist/
